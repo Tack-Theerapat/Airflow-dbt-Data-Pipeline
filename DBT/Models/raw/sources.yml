@@ -1,0 +1,12 @@
+
+version: 1
+sources:
+    - name: Ecom
+      schema: dev
+      tables:
+            - name: customer
+            - name: film
+            - name: inventory
+            - name: payment
+            - name: rental
+    

@@ -1,0 +1,56 @@
+
+version: 1
+models:
+    
+        - name: raw_payment
+          description: this is raw payment table
+          columns:
+            
+                  - name: payment_id
+                    description: this is payment_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: customer_id
+                    description: this is customer_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: staff_id
+                    description: this is staff_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: rental_id
+                    description: this is rental_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: amount
+                    description: this is amount
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: payment_date
+                    description: this is payment_date
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+        

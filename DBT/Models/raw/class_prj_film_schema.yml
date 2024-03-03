@@ -1,0 +1,112 @@
+
+version: 1
+models:
+    
+        - name: raw_film
+          description: this is raw film table
+          columns:
+            
+                  - name: film_id
+                    description: this is film_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: title
+                    description: this is title
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: description
+                    description: this is description
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: release_year
+                    description: this is release_year
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: language_id
+                    description: this is language_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: rental_duration
+                    description: this is rental_duration
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: rental_rate
+                    description: this is rental_rate
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: length
+                    description: this is length
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: replacement_cost
+                    description: this is replacement_cost
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: rating
+                    description: this is rating
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: last_update
+                    description: this is last_update
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: special_features
+                    description: this is special_features
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: fulltext
+                    description: this is fulltext
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+        

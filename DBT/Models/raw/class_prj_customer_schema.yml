@@ -1,0 +1,88 @@
+
+version: 1
+models:
+    
+        - name: raw_customer
+          description: this is raw customer table
+          columns:
+            
+                  - name: customer_id
+                    description: this is customer_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: store_id
+                    description: this is store_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: first_name
+                    description: this is first_name
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: last_name
+                    description: this is last_name
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: email
+                    description: this is email
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: address_id
+                    description: this is address_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: activebool
+                    description: this is activebool
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: create_date
+                    description: this is create_date
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: last_update
+                    description: this is last_update
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: active
+                    description: this is active
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+        

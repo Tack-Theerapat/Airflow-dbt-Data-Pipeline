@@ -1,0 +1,40 @@
+
+version: 1
+models:
+    
+        - name: raw_inventory
+          description: this is raw inventory table
+          columns:
+            
+                  - name: inventory_id
+                    description: this is inventory_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: film_id
+                    description: this is film_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: store_id
+                    description: this is store_id
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                  - name: last_update
+                    description: this is last_update
+                    tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+        

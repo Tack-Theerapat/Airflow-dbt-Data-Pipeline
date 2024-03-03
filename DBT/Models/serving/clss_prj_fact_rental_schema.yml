@@ -1,0 +1,328 @@
+
+version: 1
+models:
+
+            - name: fact_rental
+              description: this is fact_rental table
+              columns:
+                
+                - name: rental_id
+                  description: this is rental_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: rental_date
+                  description: this is rental_date
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: inventory_id
+                  description: this is inventory_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: customer_id
+                  description: this is customer_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: return_date
+                  description: this is return_date
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: staff_id
+                  description: this is staff_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: last_update
+                  description: this is last_update
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: payment_id
+                  description: this is payment_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: payment_date
+                  description: this is payment_date
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: amount
+                  description: this is amount
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: customer_id AS payment_customer_id
+                  description: this is customer_id AS payment_customer_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: staff_id AS payment_staff_id
+                  description: this is staff_id AS payment_staff_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: rental_id AS payment_rental_id
+                  description: this is rental_id AS payment_rental_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: inventory_id AS inventory_inventory_id
+                  description: this is inventory_id AS inventory_inventory_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: film_id AS inventory_film_id
+                  description: this is film_id AS inventory_film_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: store_id AS inventory_store_id
+                  description: this is store_id AS inventory_store_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: last_update AS inventory_last_update
+                  description: this is last_update AS inventory_last_update
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: film_id AS film_film_id
+                  description: this is film_id AS film_film_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: title AS film_title
+                  description: this is title AS film_title
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: description AS film_description
+                  description: this is description AS film_description
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: release_year AS film_release_year
+                  description: this is release_year AS film_release_year
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: language_id AS film_language_id
+                  description: this is language_id AS film_language_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: rental_duration AS film_rental_duration
+                  description: this is rental_duration AS film_rental_duration
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: rental_rate AS film_rental_rate
+                  description: this is rental_rate AS film_rental_rate
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: length AS film_length
+                  description: this is length AS film_length
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: replacement_cost AS film_replacement_cost
+                  description: this is replacement_cost AS film_replacement_cost
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: rating AS film_rating
+                  description: this is rating AS film_rating
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: last_update AS film_last_update
+                  description: this is last_update AS film_last_update
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: special_features AS film_special_features
+                  description: this is special_features AS film_special_features
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: fulltext AS film_fulltext
+                  description: this is fulltext AS film_fulltext
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: customer_id AS customer_customer_id
+                  description: this is customer_id AS customer_customer_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: store_id AS customer_store_id
+                  description: this is store_id AS customer_store_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: first_name AS customer_first_name
+                  description: this is first_name AS customer_first_name
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: last_name AS customer_last_name
+                  description: this is last_name AS customer_last_name
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: email AS customer_email
+                  description: this is email AS customer_email
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: address_id AS customer_address_id
+                  description: this is address_id AS customer_address_id
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: activebool AS customer_activebool
+                  description: this is activebool AS customer_activebool
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: create_date AS customer_create_date
+                  description: this is create_date AS customer_create_date
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: last_update AS customer_last_update
+                  description: this is last_update AS customer_last_update
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+
+                - name: active AS customer_active
+                  description: this is active AS customer_active
+                  tests: 
+                    - dbt_expectations.expect_column_values_to_not_be_null
+                    - dbt_expectations.expect_column_values_to_be_of_type:
+                            column_type: character varying
+                    
+            

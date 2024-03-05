@@ -8,3 +8,4 @@ A data pipeline and load into the database(AWS Redshift) for Data engineer
 2. Copy into [AWS Redshift](https://aws.amazon.com/redshift/)
 3. Transform using [dbt](https://www.getdbt.com/)
 4. Orchestrate with [Airflow](https://airflow.apache.org/) in [AWS EC2](https://aws.amazon.com/ec2/)
+5. Data ready to use for analysis and Machine Learning

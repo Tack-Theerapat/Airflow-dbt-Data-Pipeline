@@ -7,5 +7,6 @@ A data pipeline and load into the database(AWS Redshift) for Data engineer
 1. User upload data in [AWS S3](https://aws.amazon.com/s3/)
 2. Copy into [AWS Redshift](https://aws.amazon.com/redshift/)
 3. Transform using [dbt](https://www.getdbt.com/)
-4. Orchestrate with [Airflow](https://airflow.apache.org/) in [AWS EC2](https://aws.amazon.com/ec2/)
-5. Data ready to use for analysis and Machine Learning
+4. Expectations with [dbt-expectations](https://github.com/calogica/dbt-expectations)
+5. Orchestrate with [Airflow](https://airflow.apache.org/) in [AWS EC2](https://aws.amazon.com/ec2/)
+6. Data ready to use for analysis and Machine Learning
